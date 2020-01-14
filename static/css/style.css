@@ -163,7 +163,7 @@ li { margin-bottom: 0.75em; }
     content: '';
     width: 1008px;
     height: 30px;
-    background-image: url("images/hfbg.png");
+    background-image: url("../images/hfbg.png");
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
@@ -173,21 +173,21 @@ li { margin-bottom: 0.75em; }
     content: '';
     width: 1008px;
     height: 35px;
-    background-image: url("images/hfbg.png");
+    background-image: url("../images/hfbg.png");
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
     display: block;
 }
 #header {
-    background-image: url("images/contentbg.png");
+    background-image: url("../images/contentbg.png");
     background-repeat: repeat-y;
     background-position: top left;
     background-size: contain;
     position: relative;
 }
 #main {
-    background-image: url("images/contentbg.png");
+    background-image: url("../images/contentbg.png");
     background-repeat: repeat-y;
     background-position: top left;
     background-size: contain;
@@ -207,14 +207,14 @@ li { margin-bottom: 0.75em; }
     float: right;
 }
 #prefooter {
-    background: url("images/contentbg.png");
+    background: url("../images/contentbg.png");
     background-repeat: repeat-y;
     background-position: top left;
     position: relative;
 }
     #prefooter-inner {
         margin: 0 4px;
-        background-image: url("images/menu-border.png");
+        background-image: url("../images/menu-border.png");
         background-repeat: repeat-x;
         background-position: top left;
         padding: 3em 34px 0;
@@ -281,7 +281,7 @@ nav#main-nav > ul:before, nav#main-nav > ul:after  {
     width: 100%;
     height: 6px;
     display: block;
-    background: url("images/menu-border.png") repeat-x top left;
+    background: url("../images/menu-border.png") repeat-x top left;
 }
 nav#main-nav > ul {
     text-align: center;
@@ -405,7 +405,7 @@ article.firstfull {
 .page-header {
     padding-bottom: 1em;
     margin-bottom: 2em;
-    background: url("images/border.png") no-repeat bottom center;
+    background: url("../images/border.png") no-repeat bottom center;
 }
 .taxonomy-description p {
     margin: 0.75em 0;
@@ -416,7 +416,7 @@ article.firstfull {
     font-size: 0.786em;
     line-height: 3.818em;
     text-align: center;
-    background: url("images/border.png") no-repeat bottom center;
+    background: url("../images/border.png") no-repeat bottom center;
 }
 
 .excerpt .entry-meta {
@@ -429,7 +429,7 @@ article.firstfull {
 }
 .entry-meta span { background: #fff; }
 footer.entry-meta {
-    background: url("images/border.png") no-repeat top center;
+    background: url("../images/border.png") no-repeat top center;
     margin-top: 8px;
     padding-top: 8px;
 }
@@ -450,7 +450,7 @@ footer.entry-meta {
     margin: 0 0 1em 0;
     font-weight: normal;
     text-align: center;
-    background: url("images/border.png") repeat-x center center;
+    background: url("../images/border.png") repeat-x center center;
 }
 .section-title span {
     background: #fff;
@@ -625,7 +625,7 @@ html[xmlns] .slides {display: block;}
     font-size: 0.875em;
     font-weight: normal;
     text-align: center;
-    background: url("images/border.png") repeat-x center center;
+    background: url("../images/border.png") repeat-x center center;
 }
 #comments .section-title span {
     background: #fff;
@@ -694,7 +694,7 @@ ol.children {
     overflow: hidden;
 }
 .widget-title {
-    background: url("images/border.png") repeat-x 0 11px;
+    background: url("../images/border.png") repeat-x 0 11px;
     font-size: 0.857em;
     line-height: 1.75em;
     margin: 0 0 1em 0;
@@ -984,7 +984,7 @@ legend span {
 .left { float: left; }
 .right { float: right; }
 .divider {
-    background: url(images/divider-rev.png) repeat-x 0 0;
+    background: url(../images/divider-rev.png) repeat-x 0 0;
     margin: 12px 0;
     clear: both;
     height: 3px;

@@ -4,7 +4,10 @@ licenselink = "https://github.com/thedeetch/sugar-and-spice/blob/master/LICENSE"
 description = "Sugar and Spice is chic, feminine theme created with wedding blogs and wedding industry in mind."
 tags = ["blog"]
 features = ["blog", "themes"]
-min_version = 0.62.2
+min_version = 0.62
+
+# TODO: Remove when renaming to theme.toml
+title = "Midwest Mash"
 
 [author]
     name = "thedeetch"
@@ -15,3 +18,11 @@ min_version = 0.62.2
     author = "Aleksandra Łączek"
     homepage = "http://webtuts.pl/themes/sugar-spice"
     repo = "https://themes.svn.wordpress.org/sugar-and-spice/"
+
+
+
+[params]
+	description = "Dishing on Food and Life from my home to yours"
+
+	main_color = "emerald"
+	accent_color = "peach"

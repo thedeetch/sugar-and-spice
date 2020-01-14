@@ -1,0 +1,31 @@
+{{ partial "header.html" . }}
+
+<body class="home blog custom-background">
+<div id="page" class="hfeed site">
+	<header id="header" class="site-header" role="banner">
+		<div class="site-branding">
+
+        <h1 class="site-title"><a href="{{ .Site.BaseURL }}" rel="home">{{ .Site.Title }}</a></h1>
+        <h2 class="site-description">{{ .Site.Params.description }}</h2>
+        
+		</div>
+        <div id="nav-wrapper">
+            <div class="ribbon-left"></div>
+            <nav id="main-nav" class="main-navigation" role="navigation">
+				<ul id="nav">
+				{{ range .Site.Menus.main -}}
+					<li><a href="{{.URL}}">{{ .Name }}</a></li>
+				{{- end }}
+				</ul>
+            </nav><!-- #site-navigation -->
+            <div class="ribbon-right"></div>
+        </div>
+	</header><!-- #header -->
+
+	<div id="main" class="site-main">
+	{{ block "main" . -}}{{- end }}
+	</div>
+</div>
+</body>
+</html>
+ 
