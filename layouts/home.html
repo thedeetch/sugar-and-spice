@@ -41,7 +41,7 @@
         </header><!-- .entry-header -->
 
       <div class="entry-summary">
-            {{ .Summary }}
+            {{ .Summary | truncate 212 }}
             <a class="more-link entry-meta" href="{{ .Permalink }}">Continue reading →</a>
       </div><!-- .entry-summary -->
 
