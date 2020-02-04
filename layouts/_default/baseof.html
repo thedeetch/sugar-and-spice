@@ -24,9 +24,9 @@
 
 	<div id="main" class="site-main">
 	{{ block "main" . -}}{{- end }}
-
+    {{ partial "sidebar.html" . }}
 	</div>
-		{{ partial "prefooter.html" .}}
+		{{ partial "prefooter.html" . }}
 </div>
 
 {{ partial "footer.html" .}}
