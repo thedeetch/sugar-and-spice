@@ -23,7 +23,11 @@
 	</header><!-- #header -->
 
 	<div id="main" class="site-main">
+		<div id="primary" class="content-area">  
+<div id="content" class="site-content" role="main">
 	{{ block "main" . -}}{{- end }}
+</div>
+</div>
     {{ partial "sidebar.html" . }}
 	</div>
 		{{ partial "prefooter.html" . }}
