@@ -17,7 +17,11 @@
 
 		{{ with .Site.Params.instagramUrl -}}          
 		<li><a href="{{ . }}" target="_blank" class="social-icon" title="Follow me on Instagram"><div class="icon icon-instagram"></div></a></li>
-		{{- end }}                                        
+		{{- end }}
+
+		{{ with .Site.Params.facebookUrl -}}          
+		<li><a href="{{ . }}" target="_blank" class="social-icon" title="Follow me on Facebook"><div class="icon icon-facebook"></div></a></li>
+		{{- end }}                                     
 	</ul>
 </aside>		
 <aside id="recent-posts-2" class="widget widget_recent_entries">		
