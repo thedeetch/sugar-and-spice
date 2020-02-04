@@ -38,15 +38,44 @@ title = "Midwest Mash"
   [[menu.main]]
     name = "Mom Blog"
     url = "tags/mom-blog"
+    weight = 1
 
   [[menu.main]]
     name = "Main Dish"
     url = "tags/main-dish"
+    weight = 2
 
   [[menu.main]]
     name = "Side Dish"
     url = "tags/side-dish"
+    weight = 3
 
   [[menu.main]]
     name = "30 Minute Meals"
     url = "tags/30-minute-meals"
+    weight = 4
+
+  [[menu.main]]
+    name = "Sandwiches"
+    url = "tags/sandwiches"
+    weight = 5
+
+  [[menu.main]]
+    name = "Soup"
+    url = "tags/soup"
+    weight = 6
+
+  [[menu.main]]
+    name = "Baked Goods"
+    url = "tags/baked-goods"
+    weight = 7
+
+  [[menu.main]]
+    name = "Cookies"
+    url = "tags/cookies"
+    weight = 8
+
+  [[menu.main]]
+    name = "Toddler Treats"
+    url = "tags/toddler-treats"
+    weight = 9
