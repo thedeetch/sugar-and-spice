@@ -6,7 +6,7 @@ tags = ["blog"]
 features = ["blog", "themes"]
 min_version = 0.62
 
-# TODO: Remove when renaming to theme.toml
+# TODO: Remove below when renaming to theme.toml
 title = "Midwest Mash"
 
 [author]
@@ -19,8 +19,6 @@ title = "Midwest Mash"
     homepage = "http://webtuts.pl/themes/sugar-spice"
     repo = "https://themes.svn.wordpress.org/sugar-and-spice/"
 
-
-
 [params]
 	description = "Dishing on Food and Life from my home to yours"
 
@@ -30,3 +28,25 @@ title = "Midwest Mash"
 	instagramUrl = "https://instagram.com/midwest.mash/"
 	aboutMeImage = "https://midwestmash.com/wp-content/uploads/2016/10/Nick-and-Traci-All-Photos-0522.jpg"
 	summary = "Iowa girl turned Colorado transplant. Self-proclaimed home chef and mama to two little boys. Exploring food and embracing motherhood daily.  For collaborations please e-mail me at traci.dietrich@gmail.com"
+
+[menu]
+  [[menu.main]]
+    name = "About Me"
+    url = ""
+    weight = -1
+
+  [[menu.main]]
+    name = "Mom Blog"
+    url = "tags/mom-blog"
+
+  [[menu.main]]
+    name = "Main Dish"
+    url = "tags/main-dish"
+
+  [[menu.main]]
+    name = "Side Dish"
+    url = "tags/side-dish"
+
+  [[menu.main]]
+    name = "30 Minute Meals"
+    url = "tags/30-minute-meals"
