@@ -1,0 +1,21 @@
+languageCode = "en-us"
+title = "Sugar and Spice"
+baseurl = "http://localhost:1313"
+theme = "sugar-and-spice"
+
+[params]
+	description = "and everything nice"
+
+	main_color = "emerald"
+	accent_color = "peach"
+	pinterestUrl = "https://www.pinterest.com/"
+	instagramUrl = "https://instagram.com/"
+	facebookUrl = "https://facebook.com/"
+	aboutMeImage = "/images/placeholder.png"
+	summary = "My Sugar and Spice Blog!"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = ""
+    weight = -1

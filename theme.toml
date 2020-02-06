@@ -1,0 +1,17 @@
+name = "sugar-and-spice"
+license = "GPLv3"
+licenselink = "https://github.com/thedeetch/sugar-and-spice/blob/master/LICENSE"
+description = "Sugar and Spice is chic, feminine theme created with wedding blogs and wedding industry in mind."
+tags = ["blog"]
+features = ["blog", "themes"]
+min_version = 0.62
+
+[author]
+    name = "thedeetch"
+    homepage = "https://thedeetch.github.io"
+
+# Original Wordpress theme
+[original]
+    author = "Aleksandra Łączek"
+    homepage = "http://webtuts.pl/themes/sugar-spice"
+    repo = "https://themes.svn.wordpress.org/sugar-and-spice/"

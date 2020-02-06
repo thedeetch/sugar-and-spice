@@ -1,0 +1,48 @@
+<div id="sidebar" class="widget-area" role="complementary">
+
+	<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://midwestmash.com/">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+		</label>
+		<input type="submit" class="search-submit" value="Search">
+	</form>
+</aside>
+<aside id="sugarspice_social_widget-3" class="widget sugarspice_social_widget">
+	<h3 class="widget-title"><span>Follow <em>Me</em></span></h3>       
+	<ul class="social">
+		{{ with .Site.Params.pinterestUrl -}} 
+		<li><a href="https://www.pinterest.com/tgoltz/pins/" target="_blank" class="social-icon" title="Follow me on Pinterest"><div class="icon icon-pinterest"></div></a></li>
+		{{- end }} 
+
+		{{ with .Site.Params.instagramUrl -}}          
+		<li><a href="{{ . }}" target="_blank" class="social-icon" title="Follow me on Instagram"><div class="icon icon-instagram"></div></a></li>
+		{{- end }}
+
+		{{ with .Site.Params.facebookUrl -}}          
+		<li><a href="{{ . }}" target="_blank" class="social-icon" title="Follow me on Facebook"><div class="icon icon-facebook"></div></a></li>
+		{{- end }}                                     
+	</ul>
+</aside>		
+<aside id="recent-posts-2" class="widget widget_recent_entries">		
+	<h3 class="widget-title"><span>Recent <em>Posts</em></span></h3>		
+	<ul>
+		{{ range first 5 .Site.RegularPages -}}
+		<li>
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</li>
+		{{- end }}
+	</ul>
+</aside>
+<aside id="sugarspice_about_widget-2" class="widget sugarspice_about_widget">
+	<h3 class="widget-title"><span>About <em>Me</em></span></h3>
+	{{ with .Site.Params.aboutMeImage -}}
+	<img src="{{ . }}" class="profile"> 
+	{{- end }}       
+
+	{{ with .Site.Params.summary -}}
+	<p>{{ . }}</p>
+	{{- end }}
+
+</aside>        
+</div>

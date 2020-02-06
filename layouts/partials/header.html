@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
+<head>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page title -->
+    {{ if .IsHome -}}
+    <title>{{ .Site.Title }}</title>
+    {{- else -}}
+    <title>{{ .Title }}</title>
+    {{- end }}
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+    <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/responsive.css">
+    <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}fonts/icofont.css">
+    <link rel="stylesheet" id="sugarspice-fonts-css" href="//fonts.googleapis.com/css?family=Niconne%7CPT%2BSerif%3A400%2C700%7CRaleway%3A400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=5.2.5" type="text/css" media="all">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <!-- Hugo version -->
+    {{ .Hugo.Generator }}
+
+    <!-- RSS -->
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+    <style>
+        :root {
+            --green:    #97C379;
+            --emerald:  #36AB8A;
+            --mint:     #9ED6BB;
+            --peach:    #F9AA89;
+            --pink:     #F8AFB8;
+            --red:      #F03B42;
+            --violet:   #BB86B4;
+            --babyblue: #A7DBD8;
+            --orange:   #F66B40;
+            --yellow:   #fff568;
+
+            --main-color: var(--{{ .Site.Params.main_color }}, emerald);
+            --accent-color: var(--{{ .Site.Params.accent_color }}, peach);
+        }
+        a,a:visited {
+            color: var(--main-color);
+        }
+        .entry-meta a {
+            color: var(--accent-color);
+        }
+        #nav-wrapper .ribbon-left,#nav-wrapper .ribbon-right{
+            background-image: url(/images/ribbon-{{ .Site.Params.accent_color }}.png);
+        }
+        a:hover,a:focus,nav#main-nav>ul>li>a:hover {
+            opacity: 0.7;
+            color: var(--main-color);
+        }
+        nav#main-nav>ul>li.current_page_item>a,nav#main-nav>ul>li.current_page_ancestor>a,nav#main-nav>ul>li.current-menu-item>a {
+            color: var(--main-color);
+        }
+        .widget-title em {
+            color: var(--accent-color);
+        }
+        .widget_calendar table td#today {
+            background: var(--accent-color);
+        }
+        blockquote cite {
+            color: var(--main-color);
+        }
+        blockquote {
+            border-left-color: var(--accent-color);
+        }
+        .button:hover,button:hover,a.social-icon:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover {
+            opacity: 0.7;
+            background: var(--main-color);
+        }
+    </style>
+    <style>
+        body.custom-background {
+            background-color: #d1d1d1;
+            background-image: url(/images/bg.png);
+            background-position: left top;
+            background-size: auto;
+            background-repeat: repeat;
+            background-attachment: scroll;
+        }
+    </style>
+</head>
+

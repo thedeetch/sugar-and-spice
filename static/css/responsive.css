@@ -107,9 +107,9 @@
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     #page:after {
-        background-image: url("images/hfbg_hd.png");
+        background-image: url("../images/hfbg_hd.png");
     }
     #page:before {
-        background-image: url("images/hfbg_hd.png");
+        background-image: url("../images/hfbg_hd.png");
     }
 }
