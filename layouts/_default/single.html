@@ -9,8 +9,14 @@
 	<div class="entry-content">{{ .Content }}</div><!-- .entry-content -->
 
 	<footer class="entry-meta bottom">
-		
-		This entry was posted in <a href="https://midwestmash.com/category/mom-blog/" rel="category tag">Mom Blog</a> and tagged <a href="https://midwestmash.com/tag/christmas/" rel="tag">christmas</a>, <a href="https://midwestmash.com/tag/holidays/" rel="tag">holidays</a>, <a href="https://midwestmash.com/tag/mom-life/" rel="tag">mom life</a>.
+		This entry was
+		{{ with .Params.categories -}}
+		posted in {{ . }}
+		{{- end }}
+
+		{{ with .Params.tags -}}
+		and tagged {{ . }}
+		{{- end }}
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
 
