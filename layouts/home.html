@@ -1,42 +1,9 @@
 {{ define "main" -}}
   {{ range first 1 .Site.RegularPages -}}
-      <article class="firstfull">
-        <header class="entry-header">
-            <h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
-
-            {{ partial "post-meta.html" . }}
-        </header><!-- .entry-header -->
-
-        <div class="entry-content">
-            {{ .Content }}
-        </div><!-- .entry-content -->
-
-        <footer class="entry-meta bottom">
-            This entry was tagged {{ .Params.tags }}
-        </footer><!-- .entry-meta -->
-    </article><!-- #post-## -->
+    {{ .Render "single" }}
   {{- end }}
 
   {{ range after 1 .Site.RegularPages -}}
-    <article>
-        <div class="post-thumbnail">
-        {{ range .Params.images }}
-           <a href="{{ .Permalink }}">
-             <img width="210" height="210" src="{{ . }}" />
-           </a> 
-        {{ end }}
-        </div>
-        <header class="entry-header">
-            <h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
-
-            {{ partial "post-meta.html" . }}
-        </header><!-- .entry-header -->
-
-      <div class="entry-summary">
-            {{ .Summary | truncate 212 }}
-            <a class="more-link entry-meta" href="{{ .Permalink }}">Continue reading →</a>
-      </div><!-- .entry-summary -->
-
-    </article><!-- #post-## -->
+    {{ .Render "li" }}
   {{- end }}
 {{- end }}
