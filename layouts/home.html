@@ -1,7 +1,7 @@
 {{ define "main" -}}
-  {{ range first 1 .Site.RegularPages -}}
+  {{ range first 1 .Paginator.Pages -}}
     <!-- TODO: This should use a shared template with layouts/single.html -->
-    <article id="post-1302" class="post">
+    <article id="post-1302" class="post firstfull">
       <header class="entry-header">
         <h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
     
@@ -11,7 +11,7 @@
       <div class="entry-content">{{ .Content }}</div><!-- .entry-content -->
     
       <footer class="entry-meta bottom">
-        This entry was
+        This entry was 
         {{ with .Params.categories -}}
         posted in {{ . }}
         {{- end }}
@@ -21,34 +21,20 @@
         {{- end }}
       </footer><!-- .entry-meta -->
     </article><!-- #post-## -->
-    
-    
-    <nav role="navigation" id="nav-below" class="post-navigation section">
-      <h1 class="screen-reader-text">Post navigation</h1>
-    
-      <h2 class="section-title"><span>Navigation</span></h2>
-    
-      {{ with .Prev -}}
-      <div class="nav-previous"><a href="{{ .Permalink }}" rel="prev"><span class="meta-nav">← </span>{{ .Title }}</a></div>		
-      {{- end }}
-    
-      {{ with .Next -}}
-      <div class="nav-next">
-        <a href="{{ .Permalink }}" rel="next">{{ .Title }}<span class="meta-nav"> →</span></a>
-      </div>
-      {{- end }}
-      
-    </nav><!-- #nav-below -->
-    
-    
-    <div id="comments" class="comments-area section">
-        <h2 class="comments-title section-title">
-        <span>Comments</span>
-      </h2>
-    </div><!-- #comments -->
   {{- end }}
 
-  {{ range after 1 .Site.RegularPages -}}
+  {{ range after 1 .Paginator.Pages -}}
    {{ .Render "li" }}
   {{- end }}
+
+  {{ template "_internal/pagination.html" . }}
+  <div>
+    {{ if .Paginator.HasPrev }}
+    <div class="alignleft"><a href="{{ .Paginator.Prev }}">« Older posts</a></div> 
+    {{ end }}
+
+    {{ if .Paginator.HasNext }}
+    <div class="alignright"><a href="{{ .Paginator.Next }}">Newer posts »</a></div> 
+    {{ end }}
+  </div>
 {{- end }}
