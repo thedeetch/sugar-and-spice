@@ -6,7 +6,17 @@
 		{{ partial "post-meta.html" . }}
 	</header><!-- .entry-header -->
 
+	{{ if .Params.recipe }}
+	<div class="entry-meta">
+	  <a href="#recipe">↓ Jump to recipe ↓</a>
+	</div>
+	{{ end }}
+
 	<div class="entry-content">{{ .Content }}</div><!-- .entry-content -->
+
+	{{ with .Params.recipe }}
+	  {{ partial "recipe.html" . }}
+	{{ end }}
 
 	<footer class="entry-meta bottom">
 		This entry was

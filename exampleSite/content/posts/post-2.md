@@ -4,6 +4,14 @@ title: Chocolate Chip Cookies
 date: 2019-12-29
 publishdate: 2019-12-29
 author: Blanche Winifred Begonia
+
+recipe:
+  description: This is my most favorite thing!
+
+  directions:
+    1. Mix
+    2. Stir
+    3. Bake for 5 minutes
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet aliquam id diam maecenas ultricies mi eget. Non tellus orci ac auctor augue. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Dolor purus non enim praesent elementum facilisis leo vel. In iaculis nunc sed augue lacus viverra vitae congue. Bibendum at varius vel pharetra vel. Laoreet suspendisse interdum consectetur libero. Purus in massa tempor nec feugiat nisl pretium fusce. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Vitae tempus quam pellentesque nec nam aliquam. Aliquet nibh praesent tristique magna sit amet. Faucibus purus in massa tempor nec feugiat. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Fermentum iaculis eu non diam phasellus.
