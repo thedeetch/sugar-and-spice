@@ -14,7 +14,7 @@
 
 	<div class="entry-content">{{ .Content }}</div><!-- .entry-content -->
 
-	{{ with .Params.recipe }}
+	{{ if .Params.recipe }}
 	  {{ partial "recipe.html" . }}
 	{{ end }}
 

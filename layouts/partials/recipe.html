@@ -1,3 +1,20 @@
 <div id="recipe" class="recipe">
-    <span>{{.}}</span>
+    <h1>{{ .Title }}</h1>
+    <a href="javascript:window.print()">Print this recipe</a>
+    <p>{{ .Params.recipe.description }}</p>
+    <span>Prep time: {{ .Params.recipe.prepTime }}</span><br>
+    <span>Total time: {{ .Params.recipe.totalTime }}</span><br>
+    <span>Makes: {{ .Params.recipe.recipeYield }}</span><br>
+    <h3>Ingredients</h3>
+    <ul class="disc">
+        {{ range .Params.recipe.recipeIngredient }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+    <h3>Directions</h3>
+    <ol>
+        {{ range .Params.recipe.recipeInstructions }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ol>
 </div>

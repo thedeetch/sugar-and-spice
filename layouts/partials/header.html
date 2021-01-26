@@ -20,6 +20,8 @@
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
 
+    {{ partial "recipe.metadata.html" . }}
+
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
     <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/responsive.css">
