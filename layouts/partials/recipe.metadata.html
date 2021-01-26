@@ -26,14 +26,10 @@
       "image" : {
           "@context": "http://schema.org",
           "@type": "ImageObject",
-          "author": "{{ .Params.image.author }}",
-          "url": "{{ .Params.image.src }}",
+          "author": "{{ .Params.author }}",
+          "url": "{{ .Params.image }}",
           "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05" }}",
-          "name": "{{ .Params.image.title }}",
-          "height" : {{ .Params.image.height }},
-          "width" : {{ .Params.image.width }},
-          "license" : "{{ .Params.image.license_link }}",
-          "isBasedOn" : "{{ .Params.image.link }}"
+          "name": "{{ .Title }}",
         },
       "nutrition": {
         "@type": "NutritionInformation",
