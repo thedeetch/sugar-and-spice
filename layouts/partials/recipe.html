@@ -1,20 +1,30 @@
+<hr/>
 <div id="recipe" class="recipe">
-    <h1>{{ .Title }}</h1>
-    <a href="javascript:window.print()">Print this recipe</a>
-    <p>{{ .Params.recipe.description }}</p>
-    <span>Prep time: {{ .Params.recipe.prepTime }}</span><br>
-    <span>Total time: {{ .Params.recipe.totalTime }}</span><br>
-    <span>Makes: {{ .Params.recipe.recipeYield }}</span><br>
-    <h3>Ingredients</h3>
-    <ul class="disc">
-        {{ range .Params.recipe.recipeIngredient }}
-        <li>{{ . }}</li>
+    {{ with .Params.image }}
+	    <img src="{{ . }}"> 
+	{{ end }}
+    {{ with .Params.recipe }}
+        <h2 class="">{{ .title }}</h2>
+        <a href="javascript:window.print()">Print this recipe</a>
+        <p><i>{{ .description }}</i></p>
+        <span>Prep Time: {{ .prepTime }}</span><br>
+        <span>Total Time: {{ .totalTime }}</span><br>
+        <span>Makes: {{ .recipeYield }}</span><br>
+        <h3>Ingredients</h3>
+        <ul class="square">
+            {{ range .recipeIngredient }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+        <h3>Directions</h3>
+        <ol>
+            {{ range .recipeInstructions }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ol>
+        {{ with .notes }}
+            <h3>Recipe Notes</h3>
+            <p>{{ . }}</p>
         {{ end }}
-    </ul>
-    <h3>Directions</h3>
-    <ol>
-        {{ range .Params.recipe.recipeInstructions }}
-        <li>{{ . }}</li>
-        {{ end }}
-    </ol>
+    {{ end }}
 </div>
