@@ -12,11 +12,13 @@
 	</div>
 	{{ end }}
 
-	<div class="entry-content">{{ .Content }}</div><!-- .entry-content -->
+	<div class="entry-content">
+	  {{ .Content }}
 
-	{{ if .Params.recipe }}
-	  {{ partial "recipe.html" . }}
-	{{ end }}
+      {{ if .Params.recipe }}
+		{{ partial "recipe.html" . }}
+	  {{ end }}
+	</div><!-- .entry-content -->
 
 	<footer class="entry-meta bottom">
 		This entry was
@@ -48,10 +50,10 @@
 	
 </nav><!-- #nav-below -->
 
-
+<!--
 <div id="comments" class="comments-area section">
     <h2 class="comments-title section-title">
 		<span>Comments</span>
 	</h2>
-</div><!-- #comments -->
+</div>--><!-- #comments -->
 {{- end }}
