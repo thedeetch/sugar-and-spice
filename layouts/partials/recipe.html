@@ -1,7 +1,7 @@
 <hr/>
 <div id="recipe" class="recipe">
-    {{ with .Params.image }}
-	    <img src="{{ . }}"> 
+    {{ if .Params.image }}
+	    <img src="{{ .Params.image }}" alt="{{ .Params.recipe.title }}"> 
 	{{ end }}
     {{ with .Params.recipe }}
         <h2 class="">{{ .title }}</h2>
