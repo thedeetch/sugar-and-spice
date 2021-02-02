@@ -81,7 +81,7 @@ table th {
 body {
     font-size: 87.5%;
     line-height: 1.5;
-    font-family: PT Serif, Georgia, serif;
+    font-family: "Montserrat", PT Serif, Georgia, serif;
     /* color: #797979; */
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
@@ -93,7 +93,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     color: #404040;
-    font-family: "Raleway", Arial, sans-serif;
+    font-family: "Montserrat", "Raleway", Arial, sans-serif;
     font-weight: 600;
     margin: 0.75em 0;
 }
@@ -258,7 +258,7 @@ li { margin-bottom: 0.75em; }
     font-weight: 400;
 }
 .site-description {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 0.857em;
     font-weight: normal;
@@ -411,7 +411,7 @@ article.firstfull {
     margin: 0.75em 0;
 }
 .entry-meta {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 0.786em;
     line-height: 3.818em;
@@ -466,7 +466,7 @@ footer.entry-meta {
     margin-left: 100px;
 }
 .more-link {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 0.786em;
     line-height: 3.818em;
@@ -698,7 +698,7 @@ ol.children {
     font-size: 0.857em;
     line-height: 1.75em;
     margin: 0 0 1em 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
