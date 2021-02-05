@@ -3,7 +3,7 @@
 title: Chocolate Chip Cookies
 date: 2019-12-29
 publishdate: 2019-12-29
-authors: Blanche Winifred Begonia
+author: Blanche Winifred Begonia
 
 image: "/images/placeholder.png"
 
