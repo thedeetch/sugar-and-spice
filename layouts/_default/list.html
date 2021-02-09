@@ -1,0 +1,40 @@
+{{ define "main" -}}
+  {{ range first 1 .Paginator.Pages -}}
+    <!-- TODO: This should use a shared template with layouts/single.html -->
+    <article id="post-1302" class="post firstfull">
+      <header class="entry-header">
+        <h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+    
+        {{ partial "post-meta.html" . }}
+      </header><!-- .entry-header -->
+    
+      <div class="entry-content">{{ .Content }}</div><!-- .entry-content -->
+    
+      <footer class="entry-meta bottom">
+        This entry was 
+        {{ with .Params.categories -}}
+        posted in {{ . }}
+        {{- end }}
+    
+        {{ with .Params.tags -}}
+        and tagged {{ . }}
+        {{- end }}
+      </footer><!-- .entry-meta -->
+    </article><!-- #post-## -->
+  {{- end }}
+
+  {{ range after 1 .Paginator.Pages -}}
+   {{ .Render "li" }}
+  {{- end }}
+
+  {{ template "_internal/pagination.html" . }}
+  <div>
+    {{ if .Paginator.HasPrev }}
+    <div class="alignleft"><a href="{{ .Paginator.Prev }}">« Older posts</a></div> 
+    {{ end }}
+
+    {{ if .Paginator.HasNext }}
+    <div class="alignright"><a href="{{ .Paginator.Next }}">Newer posts »</a></div> 
+    {{ end }}
+  </div>
+{{- end }}
