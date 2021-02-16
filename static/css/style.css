@@ -79,7 +79,7 @@ table th {
 /* 01. Basic Styles & Typography
 ================================================== */
 body {
-    font-size: 87.5%;
+    /* font-size: 87.5%; */
     line-height: 1.5;
     font-family: "PT Serif", Georgia, serif;
     /* color: #797979; */
@@ -109,7 +109,10 @@ p { margin-bottom: 1.5em; }
 p img { margin: 0; }
 p:empty { display: none; }
 
-em, i { font-style: italic; font-size: 0.8751em; }
+em, i { 
+    font-style: italic; 
+    /* font-size: 0.8751em;  */
+}
 strong, b { font-weight: bold; }
 small { font-size: 0.7142em; }
 
@@ -1295,4 +1298,18 @@ object {
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer {
 	display: block;
+}
+
+/* Recipe */
+.recipe ul li {
+    margin-bottom: 0;
+}
+
+.recipe .label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.recipe .description {
+    font-style: italic;
 }

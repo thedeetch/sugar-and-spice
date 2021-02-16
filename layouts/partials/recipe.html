@@ -6,10 +6,10 @@
     {{ with .Params.recipe }}
         <h2 class="">{{ .title }}</h2>
         <a href="javascript:window.print()">Print this recipe</a>
-        <p><i>{{ .description }}</i></p>
-        <span>Prep Time: {{ .prepTime }}</span><br>
-        <span>Total Time: {{ .totalTime }}</span><br>
-        <span>Makes: {{ .recipeYield }}</span><br>
+        <p class="description">{{ .description }}</p>
+        <span class="label">Prep Time</span> {{ .prepTime }}</span><br>
+        <span class="label">Total Time</span> {{ .totalTime }}<br>
+        <span class="label">Servings</span> {{ .recipeYield }}<br>
         <h3>Ingredients</h3>
         <ul class="square">
             {{ range .recipeIngredient }}
